@@ -115,3 +115,18 @@ body {
 .block ul a:hover {
   color: #c0392b;
 }
+/* текущий пункт меню */
+.nav .current {
+  background: linear-gradient(to bottom, #7fb495, #4f8f6a);
+  color: #fff;
+}
+/* раздел, на который перешли по ссылке из меню, подсвечивается */
+.block:target,
+.center:target {
+  outline: 3px solid #e67e22;
+  animation: flash 1.2s;
+}
+@keyframes flash {
+  0%   { background: #ffd8a8; }
+  100% { background: linear-gradient(to bottom, #f1f8f4, #bfe0cb); }
+}
