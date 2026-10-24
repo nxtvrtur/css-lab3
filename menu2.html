@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<title>Задание 2. Вертикальное меню с выпадающими подменю</title>
+<link rel="stylesheet" href="menu.css">
+<style>
+  .drop {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 100%;            /* подменю справа от пункта */
+    width: 130px;
+    box-shadow: 3px 3px 4px #aaa;
+  }
+  .drop a {
+    font-size: 14px;
+  }
+  .item:hover > .drop {
+    display: block;        /* показываем подменю при наведении */
+  }
+</style>
+</head>
+<body>
+<div class="vnav">
+  <div class="item">
+    <a class="pt" href="">Главная</a>
+    <div class="drop">
+      <a href="">Главная страница</a>
+      <a href="">Контакты</a>
+      <a href="">О нас</a>
+    </div>
+  </div>
+  <a class="pt" href="">Отделы продаж</a>
+  <div class="item">
+    <a class="pt" href="">Поставщики</a>
+    <div class="drop">
+      <a href="">ООО "Дизайн"</a>
+      <a href="">ООО "Арт"</a>
+      <a href="">ООО "Фотостиль"</a>
+    </div>
+  </div>
+  <a class="pt" href="">Наши услуги</a>
+  <a class="pt" href="">Контакты</a>
+  <a class="pt" href="">О нас</a>
+</div>
+</body>
+</html>

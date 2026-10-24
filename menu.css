@@ -1,0 +1,30 @@
+/* общее оформление вертикальных меню (задания 2, 2*, 3) */
+body {
+  margin: 20px;
+  font-family: "Times New Roman", serif;
+}
+.vnav {
+  width: 200px;
+  box-shadow: 4px 4px 4px #999;
+}
+.vnav a {
+  display: block;
+  text-decoration: none;
+  color: #000;
+  text-align: center;
+  padding: 10px 14px;
+  border-bottom: 1px solid #ccc;
+  border-radius: 4px;
+  background: linear-gradient(to bottom, #f2f2f2, #e2e2e2);
+}
+.vnav .pt {
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 15px;
+}
+.vnav a:hover {
+  background: linear-gradient(to bottom, #cfcfcf, #8f8f8f);
+}
+.vnav .item {
+  position: relative;      /* выпадающий блок позиционируется относительно пункта */
+}

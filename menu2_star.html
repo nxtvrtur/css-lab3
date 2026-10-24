@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<title>Задание 2*. Меню с двойной вложенностью</title>
+<link rel="stylesheet" href="menu.css">
+<style>
+  .drop {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 100%;
+    width: 150px;
+    box-shadow: 3px 3px 4px #aaa;
+  }
+  .drop a {
+    font-size: 14px;
+  }
+  .item:hover > .drop {
+    display: block;
+  }
+  .drop .item > a::after {
+    content: " \25B8";     /* стрелка у пункта, у которого есть свое подменю */
+  }
+</style>
+</head>
+<body>
+<div class="vnav">
+  <a class="pt" href="">Главная</a>
+  <div class="item">
+    <a class="pt" href="">Поставщики</a>
+    <div class="drop">
+      <div class="item">
+        <a href="">ООО "Дизайн"</a>
+        <div class="drop">
+          <a href="">Логотипы</a>
+          <a href="">Баннеры</a>
+          <a href="">Визитки</a>
+        </div>
+      </div>
+      <div class="item">
+        <a href="">ООО "Арт"</a>
+        <div class="drop">
+          <a href="">Картины</a>
+          <a href="">Рамки</a>
+        </div>
+      </div>
+      <a href="">ООО "Фотостиль"</a>
+    </div>
+  </div>
+  <a class="pt" href="">Наши услуги</a>
+  <a class="pt" href="">Контакты</a>
+  <a class="pt" href="">О нас</a>
+</div>
+</body>
+</html>
