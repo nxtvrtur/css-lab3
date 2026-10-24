@@ -10,25 +10,33 @@
 <div class="header">Школа программирования «Код»</div>
 
 <div class="nav">
-  <a class="pt" href="">Главная</a>
-  <a class="pt" href="">Курсы</a>
-  <a class="pt" href="">Преподаватели</a>
-  <a class="pt" href="">Расписание</a>
-  <a class="pt" href="">Контакты</a>
+  <a class="pt" href="index.html">Главная</a>
+  <a class="pt" href="#courses">Курсы</a>
+  <a class="pt" href="#news">Новости</a>
+  <a class="pt" href="#contacts">Контакты</a>
+  <a class="pt" href="menu2.html">Меню</a>
 </div>
 
 <!-- сначала левая и правая колонки, потом центральная -->
 <div class="left">
-  <div class="block">
+  <div class="block" id="news">
     <div class="caption">Новости</div>
     <p>С 1 ноября открыт набор в новые группы по веб-разработке. Занятия проходят
     два раза в неделю по вечерам, первое занятие бесплатное. Также стартует
     интенсив по Python для школьников старших классов.</p>
   </div>
+  <div class="block">
+    <div class="caption">Меню</div>
+    <ul>
+      <li><a href="menu2.html">Выпадающее меню</a></li>
+      <li><a href="menu2_star.html">Двойная вложенность</a></li>
+      <li><a href="menu3.html">Раскрывающееся меню</a></li>
+    </ul>
+  </div>
 </div>
 
 <div class="right">
-  <div class="block">
+  <div class="block" id="contacts">
     <div class="caption">Контакты</div>
     <p><b>Адрес:</b> г. Уфа, ул. Заки Валиди, 32</p>
     <p><b>Телефон:</b> 8-900-000-00-00</p>
@@ -43,15 +51,15 @@
   </div>
 </div>
 
-<div class="center">
-  <a class="base" href=""><img src="img/html.png" alt="HTML"><span class="layer">Верстка страниц</span></a>
-  <a class="base" href=""><img src="img/css.png" alt="CSS"><span class="layer">Стили и дизайн</span></a>
-  <a class="base" href=""><img src="img/js.png" alt="JavaScript"><span class="layer">JavaScript</span></a>
-  <a class="base" href=""><img src="img/python.png" alt="Python"><span class="layer">Python с нуля</span></a>
-  <a class="base" href=""><img src="img/sql.png" alt="SQL"><span class="layer">Базы данных</span></a>
-  <a class="base" href=""><img src="img/git.png" alt="Git"><span class="layer">Контроль версий</span></a>
-  <a class="base" href=""><img src="img/figma.png" alt="Figma"><span class="layer">Дизайн в Figma</span></a>
-  <a class="base" href=""><img src="img/linux.png" alt="Linux"><span class="layer">Основы Linux</span></a>
+<div class="center" id="courses">
+  <a class="base" href="https://developer.mozilla.org/ru/docs/Web/HTML" target="_blank"><img src="img/html.png" alt="HTML"><span class="layer">Верстка страниц</span></a>
+  <a class="base" href="https://developer.mozilla.org/ru/docs/Web/CSS" target="_blank"><img src="img/css.png" alt="CSS"><span class="layer">Стили и дизайн</span></a>
+  <a class="base" href="https://learn.javascript.ru/" target="_blank"><img src="img/js.png" alt="JavaScript"><span class="layer">JavaScript</span></a>
+  <a class="base" href="https://docs.python.org/3/" target="_blank"><img src="img/python.png" alt="Python"><span class="layer">Python с нуля</span></a>
+  <a class="base" href="https://www.postgresql.org/docs/" target="_blank"><img src="img/sql.png" alt="SQL"><span class="layer">Базы данных</span></a>
+  <a class="base" href="https://git-scm.com/book/ru/v2" target="_blank"><img src="img/git.png" alt="Git"><span class="layer">Контроль версий</span></a>
+  <a class="base" href="https://www.figma.com/" target="_blank"><img src="img/figma.png" alt="Figma"><span class="layer">Дизайн в Figma</span></a>
+  <a class="base" href="https://www.kernel.org/" target="_blank"><img src="img/linux.png" alt="Linux"><span class="layer">Основы Linux</span></a>
 </div>
 </body>
 </html>

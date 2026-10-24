@@ -109,3 +109,9 @@ body {
 .base:hover .layer {
   bottom: 0;               /* при наведении выезжает снизу */
 }
+.block ul a {
+  color: #1b3a2a;
+}
+.block ul a:hover {
+  color: #c0392b;
+}

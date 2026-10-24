@@ -28,3 +28,9 @@ body {
 .vnav .item {
   position: relative;      /* выпадающий блок позиционируется относительно пункта */
 }
+.back {
+  margin-top: 24px;
+}
+.back a {
+  color: #1b5e3a;
+}
